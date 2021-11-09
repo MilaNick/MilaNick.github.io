@@ -1,69 +1,64 @@
-$max-width: 1800px
-$extra-large: 1200px
-$large: 992px
-$medium: 768px
-$small: 576px
-$extra-small: 360px
-$min-width: 320px
-
-$font: 16px
-$base-font-color: #212529
-$color-1: #8795a1
-$color-2: #3d4852
-$color-3: #22292f
-$color-4: #606f7b
-$bg-color: #fff
-$line-color: #f8f9fa
-$button-color: #6c757d
-$blue: #0dcaf0
-$yellow: #ffc107
-$red: #dc3545
+@import "variables"
+@import "animate"
+@import "details"
 
 body
   background: $bg-color
   color: $base-font-color
+  box-sizing: border-box
+  overflow: hidden
 
 .container
   margin: 0 auto
   position: relative
   width: 100vw
+  height: auto
 
 .header
   margin: 0 auto
-  width: 100vw
+  width: 100%
   height: 5vh
-  background: $red
+  position: fixed
   padding: 2vh
+  z-index: 10
+
+.screen
+  position: absolute
+  left: 0
+  opacity: 0
+  transition: opacity 1500ms
+
+.screen--active
+  opacity: 1
 
 .main-slider
   margin: 0 auto
-  width: 100vw
+  width: 100%
   height: 100vh
   padding: 0 15px
-  background: $yellow
+  background: $color-5
 
 .main-list
   margin: 0 auto
+  width: 100%
   height: 100vh
   padding: 0 15px
-  background: $blue
+  background: $color-1
 
 .switch
   margin: 0 auto
   width: 10vw
   height: 4vh
-  position: fixed
-  //background: $line-color
   display: flex
   justify-content: space-between
+  cursor: pointer
 
   &__btn
-    width: 5vw
-
+    width: 50%
     display: flex
     justify-content: center
     align-items: center
-    background: red
+    background: $button-color
 
     &--left
       border-top-left-radius: 5px
@@ -73,5 +68,7 @@ body
       border-top-right-radius: 5px
       border-bottom-right-radius: 5px
 
-
-
+    &--active
+      width: 95%
+      transition: width 1000ms
+      background: $blue

@@ -2,23 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>MyProjects</title>
 </head>
 <body>
 <div class="container">
     <div class="header">
+<!--        <div class="flipswitch">-->
+<!--            <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>-->
+<!--            <label class="flipswitch-label" for="fs">-->
+<!--                <div class="flipswitch-inner switch__btn&#45;&#45;active"></div>-->
+<!--                <div class="flipswitch-switch"></div>-->
+<!--            </label>-->
+<!--        </div>-->
     <div class="switch">
-        <div class="switch__btn switch__btn--left"><a href="#slider">слайдер</a></div>
-        <div class="switch__btn switch__btn--right"><a href="#list">список</a></div>
+        <div anim="ripple" class="switch__btn switch__btn--left switch__btn--slider switch__btn--active">слайдер</div>
+        <div anim="ripple" class="switch__btn switch__btn--right switch__btn--list">список</div>
     </div>
     </div>
-    <div class="main-slider" id="slider">
+    <div class="main-slider screen screen--active">
 
         для слайдера
     </div>
-    <div class="main-list" id="list">для списка</div>
+    <div class="main-list screen"> для списка</div>
 </div>
 <script src="src/js/script.js"></script>
 </body>
