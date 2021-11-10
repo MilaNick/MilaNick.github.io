@@ -2,32 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="src/style/normalize.css">
+    <link rel="stylesheet" href="src/style/style.css">
     <title>MyProjects</title>
 </head>
 <body>
 <div class="container">
     <div class="header">
-<!--        <div class="flipswitch">-->
-<!--            <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>-->
-<!--            <label class="flipswitch-label" for="fs">-->
-<!--                <div class="flipswitch-inner switch__btn&#45;&#45;active"></div>-->
-<!--                <div class="flipswitch-switch"></div>-->
-<!--            </label>-->
-<!--        </div>-->
-
     <div class="switch">
         <div anim="ripple" class="switch__btn switch__btn--left switch__btn--slider switch__btn--active">слайдер</div>
         <div anim="ripple" class="switch__btn switch__btn--right switch__btn--list">список</div>
     </div>
     </div>
     <div class="main-slider screen screen--active">
-
-        для слайдера
+        <div class="slider">
+            <div class="slider__item"><img src="src/pic/001.jpg" alt=""></div>
+            <div class="slider__item"><img src="src/pic/002.jpg" alt=""></div>
+            <div class="slider__item"><img src="src/pic/003.jpg" alt=""></div>
+            <div class="slider__item"><img src="src/pic/004.jpg" alt=""></div>
+            <div class="slider__item"><img src="src/pic/005.jpg" alt=""></div>
+            <div class="slider__item"><img src="src/pic/006.jpg" alt=""></div>
+            <div class="slider__item"><img src="src/pic/007.jpg" alt=""></div>
+            <div class="slider__item"><img src="src/pic/008.jpg" alt=""></div>
+            <div class="slider__item"><img src="src/pic/009.jpg" alt=""></div>
+            <div class="slider__item"><img src="src/pic/010.jpg" alt=""></div>
+            <div class="slider__item"><img src="src/pic/011.jpg" alt=""></div>
+        </div>
     </div>
     <div class="main-list screen"> для списка</div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="src/js/slick.min.js"></script>
 <script src="src/js/script.js"></script>
+<!--<script src="/my.js"></script>-->
 </body>
 </html>

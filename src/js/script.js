@@ -1,4 +1,5 @@
 window.addEventListener('load', function () {
+  // Для переключения блоков список и слайдер
 const btnSlider = document.querySelector('.switch__btn--slider');
 const btnList = document.querySelector('.switch__btn--list');
 const screenSlider = document.querySelector('.main-slider')
@@ -22,6 +23,7 @@ btnList.onclick = () => {
   addClass(btnList, 'switch__btn--active');
   addClass(screenList, 'screen--active');
 }
+// блик на кнопке
   [].map.call(document.querySelectorAll('[anim="ripple"]'), (el) => {
     el.addEventListener("click", (e) => {
       e = e.touches ? e.touches[0] : e;
@@ -34,4 +36,9 @@ btnList.onclick = () => {
       }; --y:${e.clientY - r.top};`;
     });
   });
-})
+// подключение jquery и slick slider
+$(document).ready(function(){
+    $('.slider').slick();
+
+});
+});
