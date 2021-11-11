@@ -54,8 +54,8 @@ window.addEventListener('load', function () {
       });
     });
     $slider.slick({
-      prevArrow: '<div class="ripple slick-arrow slick-prev"><</div>',
-      nextArrow: '<div class="ripple slick-arrow slick-next">></div>',
+      prevArrow: '<div class="ripple slick-arrow slick-prev"><</i></div>',
+      nextArrow: '<div class="ripple slick-arrow slick-next">></i></div>',
       dots: true,
       // adaptiveHeight: true,
       infinite: true,

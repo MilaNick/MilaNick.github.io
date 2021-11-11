@@ -52,12 +52,12 @@
   width: 50px;
   height: 60px;
   background: #22292f;
-  opacity: 0.5;
+  opacity: 0.7;
   border: none;
   cursor: pointer;
-  font-size: 36px;
+  font-size: 48px;
   color: #f8f9fa;
-  font-family: 'Alegreya Sans Black', serif;
+  font-family: 'Alegreya Sans', serif;
   position: absolute;
   top: 50%;
   z-index: 5; }
