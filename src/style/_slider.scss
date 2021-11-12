@@ -144,8 +144,8 @@
     background: $bg-color;
     border: 3px solid $line-color;
     border-radius: 5px;
-    overflow: auto;
-    padding: 3vh;
+    overflow: hidden;
+    padding: 1vh;
   }
  & .inner__slider {
    width: 100%;

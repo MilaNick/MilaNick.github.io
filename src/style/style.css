@@ -100,7 +100,7 @@
   background: #fff;
   border: 3px solid #f8f9fa;
   border-radius: 5px;
-  overflow: auto;
+  overflow: hidden;
   padding: 3vh; }
 
 .slider .inner__slider {
@@ -195,13 +195,14 @@ video {
 
 .portfolio {
   font-size: 24px;
-  font-weight: 400;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center; }
+  font-weight: 400; }
   .portfolio__title {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin: 0.3em; }
+  .portfolio__grid {
+    display: flex;
+    align-items: flex-start; }
   .portfolio__video, .portfolio__content {
     width: calc(50% - 1px);
     text-align: justify;
