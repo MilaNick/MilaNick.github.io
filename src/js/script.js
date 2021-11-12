@@ -23,22 +23,10 @@ window.addEventListener('load', function () {
     addClass(btnList, 'switch__btn--active');
     addClass(screenList, 'screen--active');
   }
-// блик на кнопке
-//   [].map.call(document.querySelectorAll('[anim="ripple"]'), (el) => {
-//     el.addEventListener("click", (e) => {
-//       e = e.touches ? e.touches[0] : e;
-//       const r = el.getBoundingClientRect(),
-//         d = Math.sqrt(Math.pow(r.width, 2) + Math.pow(r.height, 2)) * 2;
-//       el.style.cssText = `--s: 0; --o: 1;`;
-//       el.offsetTop;
-//       el.style.cssText = `--t: 1; --o: 0; --d: ${d}; --x:${
-//         e.clientX - r.left
-//       }; --y:${e.clientY - r.top};`;
-//     });
-//   });
 // подключение jquery и slick slider
   $(document).ready(function () {
     const $slider = $('.slider');
+    // блик на кнопке
     $slider.on('init', function (event, slick) {
       [...document.querySelectorAll('.ripple')].forEach((el) => {
         el.addEventListener("click", (e) => {
@@ -57,25 +45,18 @@ window.addEventListener('load', function () {
       prevArrow: '<div class="ripple slick-arrow slick-prev"><</i></div>',
       nextArrow: '<div class="ripple slick-arrow slick-next">></i></div>',
       dots: true,
-      // adaptiveHeight: true,
       infinite: true,
       centerPadding: 0,
       speed: 800,
       slidesToShow: 1,
       slidesToScroll: 1,
       easing: 'ease',
-      autoplay: false,
-      autoplaySpeed: 3000,
-      pauseOnFocus: true,
-      pauseOnHover: true,
-      pauseOnDotsHover: true,
       draggable: true,
       swipe: true,
       touchThreshold: 8,
       waitForAnimate: false,
       centerMode: true,
-      // variableWidth: false,
-      // fade: true,
+
     });
   });
 
