@@ -127,6 +127,12 @@ h2 {
   color: #0dcaf0;
   text-transform: uppercase; }
 
+h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #0dcaf0;
+  text-transform: uppercase; }
+
 a {
   font-weight: 500;
   color: #0dcaf0;
@@ -140,7 +146,8 @@ img {
   object-fit: cover; }
 
 p {
-  margin-top: 0; }
+  margin-top: 0;
+  font-size: 24px; }
 
 video {
   width: 100%; }
@@ -153,7 +160,6 @@ video {
 
 .header {
   width: 100%;
-  height: 5vh;
   position: fixed;
   padding: 2vh;
   margin: 0 auto;
@@ -194,7 +200,6 @@ video {
   margin: 10vh auto 0; }
 
 .portfolio {
-  font-size: 24px;
   font-weight: 400; }
   .portfolio__title {
     width: 100%;
@@ -214,10 +219,12 @@ video {
 
 .main-list {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: #fff;
-  padding: 0 15px;
-  margin: 0 auto; }
+  margin: 5vh auto; }
+
+.grey {
+  background: #f8f9fa; }
 
 .screen {
   opacity: 0;
@@ -228,3 +235,24 @@ video {
 .screen--active {
   opacity: 1;
   z-index: 2; }
+
+.list__item {
+  width: 100%;
+  height: auto;
+  padding: 15px 25px; }
+  .list__item p {
+    margin-top: 10px; }
+
+.item__link {
+  margin-top: 0;
+  color: #22292f;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .item__link:hover {
+    color: #ffc107; }
+
+.item__description {
+  display: none; }
+
+.visible {
+  display: block; }

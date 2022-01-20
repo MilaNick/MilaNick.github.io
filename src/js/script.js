@@ -4,6 +4,8 @@ window.addEventListener('load', function () {
   const btnList = document.querySelector('.switch__btn--list');
   const screenSlider = document.querySelector('.main-slider')
   const screenList = document.querySelector('.main-list')
+  const itemLink = document.querySelectorAll('.list__item .item__link')
+
 
   const removeClass = (item, cl) => {
     item.classList.remove(cl);
@@ -59,6 +61,16 @@ window.addEventListener('load', function () {
 
     });
   });
-
+// работа со списком
+  [...screenList.children].forEach((item, i) => {
+    if(i % 2 === 1) {
+      item.classList.add('grey')
+    }
+  })
+  itemLink.forEach((item) => {
+    item.addEventListener('click', () => {
+      item.parentNode.querySelector('.item__description').classList.toggle('visible')
+    })
+  })
 
 });
