@@ -2,6 +2,7 @@
 @import "animate"
 @import "details"
 @import "slider"
+@import "mixin"
 
 *
   box-sizing: border-box
@@ -103,6 +104,12 @@ video
 
 .portfolio
   font-weight: 400
+  @include respond-to(handhelds)
+    background: red
+    height: auto
+  @include respond-to(medium-screens)
+    background: red
+    height: auto
 
   &__title
     width: 100%
@@ -118,6 +125,12 @@ video
     width: calc(50% - 1px)
     text-align: justify
     padding: 1em
+    @include respond-to(handhelds)
+      background: red
+      width: calc(100% - 2px)
+    @include respond-to(medium-screens)
+      background: red
+      width: calc(100% - 2px)
 
   &__video
     margin-bottom: 1em
@@ -166,3 +179,5 @@ video
 
 .visible
   display: block
+
+//-------------

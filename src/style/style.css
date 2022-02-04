@@ -201,6 +201,14 @@ video {
 
 .portfolio {
   font-weight: 400; }
+  @media only screen and (max-width: 576px) {
+    .portfolio {
+      background: red;
+      height: auto; } }
+  @media only screen and (min-width: 577px) and (max-width: 991px) {
+    .portfolio {
+      background: red;
+      height: auto; } }
   .portfolio__title {
     width: 100%;
     text-align: center;
@@ -212,6 +220,14 @@ video {
     width: calc(50% - 1px);
     text-align: justify;
     padding: 1em; }
+    @media only screen and (max-width: 576px) {
+      .portfolio__video, .portfolio__content {
+        background: red;
+        width: calc(100% - 2px); } }
+    @media only screen and (min-width: 577px) and (max-width: 991px) {
+      .portfolio__video, .portfolio__content {
+        background: red;
+        width: calc(100% - 2px); } }
   .portfolio__video {
     margin-bottom: 1em; }
   .portfolio__content {
