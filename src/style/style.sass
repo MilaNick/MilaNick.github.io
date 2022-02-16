@@ -110,6 +110,7 @@ video
   @include respond-to(medium-screens)
     background: red
     height: auto
+    //display: flex
 
   &__title
     width: 100%
@@ -125,6 +126,7 @@ video
     width: calc(50% - 1px)
     text-align: justify
     padding: 1em
+    //flex-grow: 1
     @include respond-to(handhelds)
       background: red
       width: calc(100% - 2px)
@@ -137,6 +139,7 @@ video
 
   &__content
     border-left: 2px dotted $color-5
+    //flex-grow: 1
 
 .main-list
   width: 100%
